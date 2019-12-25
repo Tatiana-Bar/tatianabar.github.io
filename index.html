@@ -167,7 +167,7 @@
 									<p>2. Определились с выбором темы веб-приложения.</p>
 									<p>3. Распределили роли, каждый разобрался в поставленной ему задаче.<p>
 									<p>Создали веб-приложение.</p>
-					<a href="https://fly-fly-bird.github.io/">Fly-Fly-Bird</a>
+									<a href="https://fly-fly-bird.github.io/">Fly-Fly-Bird</a>
                                 </div>
                             </div>
                         </div>
@@ -183,13 +183,24 @@
             <div class="container content-lg">
                 <div class="row">
                     <div class="col-sm-5 sm-margin-b-60">
-                        <img class="full-width img-responsive" src="img/500x700/1.jpg" alt="Image">
-						<img class="full-width img-responsive" src="img/500x700/2.jpg" alt="Image">
+                        <img class="full-width img-responsive" src="img/500x700/laba3-1.png" alt="Image">
+									<p class="center-align">Рис. 1. Результат выполнения 1-4 пунктов</p>
+						<img class="full-width img-responsive" src="img/500x700/laba3-2.png" alt="Image">
+						<p class="center-align">Рис. 2. Результат выполнения 5-7 пунктов</p>
+						<img class="full-width img-responsive" src="img/500x700/laba3-3.png" alt="Image">
+						<p class="center-align">Рис. 2. Результат выполнения пунктов 8-12 </p>
+						<img class="full-width img-responsive" src="img/500x700/laba3-4.png" alt="Image">
+						<p class="center-align">Рис. 2. Результат выполнения пунктов 13-19 </p>
+						<img class="full-width img-responsive" src="img/500x700/laba3-5.png" alt="Image">
+						<p class="center-align">Рис. 5. Результат выполнения 20-22 пунктов</p>
+						<img class="full-width img-responsive" src="img/500x700/laba3-6.png" alt="Image">
+						<p class="center-align">Рис. 6. Результат выполнения 22 пункта</p>
                     </div>
                     <div class="col-sm-7">
                         <div class="section-seperator margin-b-50">
                             <div class="margin-b-50">
                                 <div class="margin-b-30">
+								
                                     <h2>Лабораторная работа №3</h2>
                                     <h3>"Настройка сети передачи данных"</h3>
 									<p>Цель работы: Настройка коммутаторов и маршрутизаторов.</p>
@@ -200,10 +211,67 @@
 									<p>4. Выполнить проверку работоспособности сети.<p>
 									<p>5. Добавить на рабочее поле еще один коммутатор с двумя компьютерами и настроить адресацию из другой подсети.<p>
 									<p>6. Соединить коммутаторы между собой и проверить работоспособность сети.<p>
-									<p>7. Добавить маршрутизатор на рабочее поле.<p>
-									<p>8. Настроить интерфейсы маршрутизатора для существующих подсетей.<p>
-									<p>9. Проверить работоспособность сети.<p>
-									<p>10. Указать шлюз по умолчанию и отправить сообщение.<p>
+									<p>7. В случае неработоспособности сети объяснить причины.<p>
+									<p>8. Добавить маршрутизатор на рабочее поле.<p>
+				
+									
+                        <ul class="collection with-header">
+                        <li class="collection-header">
+                            <h6>Команды на маршрутизаторе</h6>
+                        </li
+						
+                        <h6> enable.<h6>
+                        <h6> configure terminal.<h6>
+                        <h6> interface fa0/0.<h6>
+                        <h6> ip address 192.168.2.1 255.255.255.248.<h6>
+			    <h6> no shutdown.<h6>
+                        <h6> exit.<h6>
+                        <h6> interface fa0/1.<h6>
+			    <h6> ip address 15.15.2.1 255.255.255.252.<h6>
+                        <h6> no shutdown.<h6>
+						</ul>
+									<p>9. Настроить интерфейсы маршрутизатора для существующих подсетей.<p>
+									<p>10. В случае неработоспособности сети объяснить причины.<p>
+									<p>11. Проверить работоспособность сети.<p>
+									<p>12. Указать шлюз по умолчанию и отправить сообщение.<p>
+									<p>13. Добавить на рабочее поле еще один маршрутизатор.<p>
+			                        <p>14. Подключить к нему коммутатор и компьютер.<p>
+                                    <p>15. Настроить сетевые настройки согласно таблице ниже.<p>
+                                    <p>16. Соединить между маршрутизаторы и настроить между ними сеть с префиксом /30.<p>
+			                        <p>17. Проверить работоспособность сети, отправив сообщение сети A в сеть С и из сети В в сеть С.<p>
+                                    <p>18. В случае неработоспособности сети объяснить причины.<p>
+                                    <p>19. Настроить статическую маршрутизацию между сетями.<p>
+                                    <ul class="collection with-header">
+                        <li class="collection-header">
+                            <h6>Команды на маршрутизаторе</h6>
+                        </li
+                        <h6> на 1 маршрутизоре: ip route 10.10.0.0 255.255.248.0 FastEthernet1/0 <h6>
+                        <h6> на 2 маршрутизаторе: ip route 172.16.0.0 255.255.252.0 FastEthernet0/0<h6>
+                        <h6> на 2 маршрутизаторе: ip route 192.168.0.0 255.255.252.0 FastEthernet0/0<h6>       	  
+                    </ul>
+			                        <p>20. Настроить на сетевых устройствах пароли для привилегированного режима.<p>
+						<ul class="collection with-header">
+                        <li class="collection-header">
+                            <h6>Команды на сетевых устройствах</h6>
+                        </li>
+						<h6>enable.<h6>
+                        <h6> configure terminal.<h6>
+                        <h6> hostname "name"<h6>
+                        <h6> enable password cisco<h6>
+			            <h6> line 0<h6>
+                        <h6> password cisco<h6>
+                        <h6> login<h6>
+			            <h6> exit<h6>
+                        <h6> live vty 0 15<h6>
+	                    <h6> password cisco<h6>
+                        <h6> login<h6>
+			            <h6> exit<h6>
+                        <h6>service password-encryption<h6>
+	                    <h6>banner motd hello<h6>
+						</ul>
+			                        <p>21. Настроить пароли на сетевых устройствах пароли на подключение через консоль и telnet.<p>
+			                        <p>22. Установить баннер на сетевое оборудование.<p>
+			                        <p>23. Проверить работу удаленного подключения.<p>
 									<p>Ход работы</p>
                                     <p>1. Рассчитать IP-адрес. </p> 				
 									<p>2. Настроить адресацию между двумя узлами и коммутатором.</p>
@@ -211,7 +279,76 @@
 									<p>4. Настроить статическую маршрутизацию при помощи команды: ip route [сеть назначения] [маска] [маршрут].<p>
 									<p>5. Установить банер на сетевое оборудование: banner motd [баннер].<p>
 									<p>Вывод</p>
-                                    <p>В ходе выполнения работы была проведена базовая настройка сетевого оборудования. </p> 
+                                    <p>В ходе выполнения работы была проведена базовая настройка сетевого оборудования. </p>
+									<p>Составили таблицу подсетей (вариант 2) </p>
+									 <div align=center>
+    <table class="highlight">
+                        <thead>
+                            <tr>
+                                <th>Параметр</th>
+			                    <th>LAN A</th>
+			                    <th>LAN B</th>
+                                <th>LAN C</th> 
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Количество узлов</td>
+			                    <td>5</td>
+			                    <td>965</td>
+                                <td>1024</td>
+                            </tr>
+                            <tr>
+                                <td>Ближайшая сверху степень двойки</td>
+                                <td>3</td>
+                                <td>10</td>
+                                <td>11</td>
+                            </tr>
+                            <tr>
+                                <td>Маска (префиксная)</td>
+                                  <td>29</td>
+                                  <td>22</td>
+                                  <td>21</td>
+                            </tr>
+                            <tr>
+                                <td>Маска (десятичная)</td>
+			                    <td>255.255.255.248</td>
+                                <td>255.255.252.0</td>
+                                <td>255.255.248.0</td>
+                            </tr>
+                            <tr>
+                                <td>Адрес</td>
+			                    <td>192.168.2.0</td>
+                                 <td>172.16.2.0</td>
+                                <td>10.10.2.0</td>
+                            </tr>
+                            <tr>
+                                <td>SUBNET</td>
+			                    <td>192.168.0.0</td>
+                                  <td>172.16.0.0</td>
+                                  <td>10.10.0.0</td>
+                            </tr>
+                            <tr>
+                                <td>HOSTMIN</td>
+			<td>192.168.3.1</td>
+      <td>172.16.3.1</td>
+      <td>10.10.3.1</td>
+                            </tr>
+                            <tr>
+                                <td>HOSTMAX</td>
+			<td>192.168.2.5</td>
+      <td>172.16.3.254</td>
+      <td>10.10.7.254</td>
+                            </tr>
+                             <tr>
+                                <td>BROADCAST</td>
+			<td>192.168.2.6</td>
+      <td>172.16.3.255</td>
+      <td>10.10.7.255</td>
+                            </tr>
+                        </tbody>
+                    </table>
                                 </div>
                             </div>
                         </div>
@@ -221,6 +358,8 @@
             </div>
         </div>
         <!-- Experience -->
+		
+		
 		
         <!-- Clients -->
         <div class="bg-color-sky-light">
